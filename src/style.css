@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+    background-image: radial-gradient(
+      rgba(0, 150, 0, 0.75), black 120%
+    );
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    padding: 2rem;
+    color: white;
+    font: 1.3rem Inconsolata, monospace;
+    text-shadow: 0 0 5px #C8C8C8;
+  }
+
+  body::after {
+    content: "";
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(black, 0.15),
+      rgba(black, 0.15) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+  }
+
+  ::selection {
+    background: #0080FF;
+    text-shadow: none;
+  }
+
+input {
+    width: 100%;
+}
+
+input[type="text"]
+{
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+*:focus {
+  outline: none;
+}
+
+.red {
+  color: red;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+
+
+/* 
+if (this.consoleInput !== null || this.consoleInput !== undefined){
+  this.createKeyUpShiftEnter.subscribe((e) => {
+    e.preventDefault();
+    //parseInput();
+  })
+  let fieldWhileArrowUp = this.createKeyUpWithCustomKey(this.consoleInput,"ArrowUp");
+  let fieldWhileArrowDown = this.createKeyUpWithCustomKey(this.consoleInput,"ArrowDown");
+    
+  fieldWhileArrowUp.subscribe(() => {
+    if (this.state.recentValues.length > 0 && (this.state.pos >= 0)) {
+      //setInputValue((this.state.recentValues[this.state.pos] ? this.recentValues[this.state.pos] : ""))
+      this.setState({ pos: this.state.pos - 1});
+    }
+  });
+    
+  fieldWhileArrowDown.subscribe(() => {
+    if (this.state.recentValues.length > 0 && this.state.pos < this.state.recentValues.length) {
+      //setInputValue((this.recentValues[this.state.pos] ? this.recentValues[this.state.pos] : ""))
+      this.setState({ pos: this.state.pos + 1});
+    }
+  });
+} */ 
+
